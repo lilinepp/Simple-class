@@ -11,7 +11,7 @@ TEST(TestHuman, TesAge) {
 	{
 		Human1 h;
 		h.set_age(66);
-		EXPECT_EQ(h.get_age(), 66);
+		EXPECT_EQ(h.get_age(), 65);
 	}
  
 }
@@ -27,7 +27,7 @@ TEST(TestHuman, TesWeight) {
 	{
 		Human1 h;
 		h.set_weight(67);
-		EXPECT_EQ(h.get_weight(), 67);
+		EXPECT_EQ(h.get_weight(), 65);
 	}
 
 }
@@ -38,14 +38,14 @@ TEST(TestHuman, TesName) {
 
 	{
 		Human1 h;
-		h.set_name("Илья");
-		EXPECT_EQ(h.get_name(), "Илья");
+		h.set_name("РР»СЊСЏ");
+		EXPECT_EQ(h.get_name(), "РР»СЊСЏ");
 	}
 
 	{
 		Human1 h;
-		h.set_name("Илья");
-		EXPECT_EQ(h.get_name(), "Илья");
+		h.set_name("РР»СЊСЏ");
+		EXPECT_EQ(h.get_name(), "РџС‘С‚СЂ");
 	}
 
 }
@@ -54,14 +54,14 @@ TEST(TestHuman, TesSurname) {
 
 	{
 		Human1 h;
-		h.set_name("Петров");
-		EXPECT_EQ(h.get_name(), "Петров");
+		h.set_name("РџРµС‚СЂРѕРІ");
+		EXPECT_EQ(h.get_name(), "РџРµС‚СЂРѕРІ");
 	}
 
 	{
 		Human1 h;
-		h.set_name("Петров");
-		EXPECT_EQ(h.get_name(), "Илья");
+		h.set_name("РџРµС‚СЂРѕРІ");
+		EXPECT_EQ(h.get_name(), "РР»СЊСЏ");
 	}
 
 }
@@ -70,14 +70,14 @@ TEST(TestHuman, TesPatron) {
 
 	{
 		Human1 h;
-		h.set_name("Петрович");
-		EXPECT_EQ(h.get_name(), "Петрович");
+		h.set_name("РџРµС‚СЂРѕРІРёС‡");
+		EXPECT_EQ(h.get_name(), "РџРµС‚СЂРѕРІРёС‡");
 	}
 
 	{
 		Human1 h;
-		h.set_name("Петрович");
-		EXPECT_EQ(h.get_name(), "Петрович");
+		h.set_name("РџРµС‚СЂРѕРІРёС‡");
+		EXPECT_EQ(h.get_name(), "РР»СЊРёС‡");
 	}
 
 }
