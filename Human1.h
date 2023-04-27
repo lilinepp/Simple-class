@@ -1,4 +1,4 @@
-//Простой класс.Разработала Мясоедова Алина,студентка группы ВМК-20
+//РџСЂРѕСЃС‚РѕР№ РєР»Р°СЃСЃ.Р Р°Р·СЂР°Р±РѕС‚Р°Р»Р° РњСЏСЃРѕРµРґРѕРІР° РђР»РёРЅР°,СЃС‚СѓРґРµРЅС‚РєР° РіСЂСѓРїРїС‹ Р’РњРљ-20
 
 #pragma once
 #include<string>
@@ -7,49 +7,49 @@
 using namespace std;
 
 /// <summary>
-/// класс Человeк
+/// РєР»Р°СЃСЃ Р§РµР»РѕРІeРє
 /// </summary>
 class Human1 
 {
 private:
 	/// <summary>
-	/// возраст
+	/// РІРѕР·СЂР°СЃС‚
 	/// </summary>
 	int age;
 	/// <summary>
-	/// вес
+	/// РІРµСЃ
 	/// </summary>
 	int weight; 
 	/// <summary>
-	/// имя
+	/// РёРјСЏ
 	/// </summary>
 	string name;
 	/// <summary>
-	/// фамилия
+	/// С„Р°РјРёР»РёСЏ
 	/// </summary>
 	string surname;
 	/// <summary>
-	/// отчество
+	/// РѕС‚С‡РµСЃС‚РІРѕ
 	/// </summary>
 	string patron;
 public:
 
-	// конструктор по умолчанию
+	// РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ
 	Human1();
 
-	// конструктор с заданием данных
+	// РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ СЃ Р·Р°РґР°РЅРёРµРј РґР°РЅРЅС‹С…
 	Human1(string _name,string _surname, string _patron, int _age, int _weight);
 
 	string get_surname() const;
 	void set_surname(string surname1);
 	string get_patron() const;
 	void set_patron(string patron1);
-	int get_age() const;///возвращает возраст
-	int get_weight() const;//возвращает вес
-	void set_age(int age1); //заполняет возраст
-	void set_weight(int weight1);//заполняет вес
-	string get_name() const;//возращает ФИО
-	void set_name(string name1);//заполняет ФИО
+	int get_age() const;///РІРѕР·РІСЂР°С‰Р°РµС‚ РІРѕР·СЂР°СЃС‚
+	int get_weight() const;//РІРѕР·РІСЂР°С‰Р°РµС‚ РІРµСЃ
+	void set_age(int age1); //Р·Р°РїРѕР»РЅСЏРµС‚ РІРѕР·СЂР°СЃС‚
+	void set_weight(int weight1);//Р·Р°РїРѕР»РЅСЏРµС‚ РІРµСЃ
+	string get_name() const;//РІРѕР·СЂР°С‰Р°РµС‚ Р¤РРћ
+	void set_name(string name1);//Р·Р°РїРѕР»РЅСЏРµС‚ Р¤РРћ
 	string tostring() const;
 	void set_all(string _name, string _surname, string _patron, int _age, int _weight); 
 
