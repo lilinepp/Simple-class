@@ -1,4 +1,4 @@
-//Простой класс.Разработала Мясоедова Алина,студентка группы ВМК-20
+//РџСЂРѕСЃС‚РѕР№ РєР»Р°СЃСЃ.Р Р°Р·СЂР°Р±РѕС‚Р°Р»Р° РњСЏСЃРѕРµРґРѕРІР° РђР»РёРЅР°,СЃС‚СѓРґРµРЅС‚РєР° РіСЂСѓРїРїС‹ Р’РњРљ-20
 
 
 #include "Human1.h"
@@ -32,9 +32,9 @@ string Human1::get_surname() const
 
 void Human1::set_surname(string surname1)
 {
-	if (surname1 != "") // поле не должно быть пустым
-		this->surname = surname1; //проверка заполнения
-	else throw invalid_argument("Введите фамилию"); //исключение
+	if (surname1 != "") // РїРѕР»Рµ РЅРµ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ РїСѓСЃС‚С‹Рј
+		this->surname = surname1; //РїСЂРѕРІРµСЂРєР° Р·Р°РїРѕР»РЅРµРЅРёСЏ
+	else throw invalid_argument("Р’РІРµРґРёС‚Рµ С„Р°РјРёР»РёСЋ"); //РёСЃРєР»СЋС‡РµРЅРёРµ
 }
 
 string Human1::get_patron() const
@@ -44,44 +44,44 @@ string Human1::get_patron() const
 
 void Human1::set_patron(string patron1) // const string & patron1
 {
-	if (patron1 != "") // поле не должно быть пустым
-		this->patron = patron1; //проверка заполнения
-	else throw invalid_argument("Введите отчество"); //исключение
+	if (patron1 != "") // РїРѕР»Рµ РЅРµ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ РїСѓСЃС‚С‹Рј
+		this->patron = patron1; //РїСЂРѕРІРµСЂРєР° Р·Р°РїРѕР»РЅРµРЅРёСЏ
+	else throw invalid_argument("Р’РІРµРґРёС‚Рµ РѕС‚С‡РµСЃС‚РІРѕ"); //РёСЃРєР»СЋС‡РµРЅРёРµ
 }
 
-int Human1::get_age() const { return age; } //возвращает возраст
+int Human1::get_age() const { return age; } //РІРѕР·РІСЂР°С‰Р°РµС‚ РІРѕР·СЂР°СЃС‚
 
-void Human1::set_age(int age1) //заполнение возраста
+void Human1::set_age(int age1) //Р·Р°РїРѕР»РЅРµРЅРёРµ РІРѕР·СЂР°СЃС‚Р°
 {
-	if (age1 >= 0) //проверка заполнения
-		age = age1; //возраст равен переданному значению
+	if (age1 >= 0) //РїСЂРѕРІРµСЂРєР° Р·Р°РїРѕР»РЅРµРЅРёСЏ
+		age = age1; //РІРѕР·СЂР°СЃС‚ СЂР°РІРµРЅ РїРµСЂРµРґР°РЅРЅРѕРјСѓ Р·РЅР°С‡РµРЅРёСЋ
 	else 
-		throw invalid_argument(" Возраст должен быть	меньше или равен 0"); //бросает исключение
+		throw invalid_argument(" Р’РѕР·СЂР°СЃС‚ РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ	РјРµРЅСЊС€Рµ РёР»Рё СЂР°РІРµРЅ 0"); //Р±СЂРѕСЃР°РµС‚ РёСЃРєР»СЋС‡РµРЅРёРµ
 }
 
-int Human1::get_weight() const { return weight; } //Возрасщает вес
+int Human1::get_weight() const { return weight; } //Р’РѕР·СЂР°СЃС‰Р°РµС‚ РІРµСЃ
 
-void Human1::set_weight(int weight1) //заполнение веса
+void Human1::set_weight(int weight1) //Р·Р°РїРѕР»РЅРµРЅРёРµ РІРµСЃР°
 {
-	if (weight1 > 0) this->weight = weight1; //проверка заполнения
-	else throw invalid_argument("Вес не должен быть равен 0");//бросает исключение
+	if (weight1 > 0) this->weight = weight1; //РїСЂРѕРІРµСЂРєР° Р·Р°РїРѕР»РЅРµРЅРёСЏ
+	else throw invalid_argument("Р’РµСЃ РЅРµ РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ СЂР°РІРµРЅ 0");//Р±СЂРѕСЃР°РµС‚ РёСЃРєР»СЋС‡РµРЅРёРµ
 }
 
 
-string Human1::get_name() const { return name; }// Возвращает ФИО
+string Human1::get_name() const { return name; }// Р’РѕР·РІСЂР°С‰Р°РµС‚ Р¤РРћ
 
-void Human1::set_name(string name1) // заполнение
+void Human1::set_name(string name1) // Р·Р°РїРѕР»РЅРµРЅРёРµ
 {
-	if (name1 != "") // поле не должно быть пустым
-		this->name = name1; //проверка заполнения
-	else throw invalid_argument("Введите данные"); //исключение
+	if (name1 != "") // РїРѕР»Рµ РЅРµ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ РїСѓСЃС‚С‹Рј
+		this->name = name1; //РїСЂРѕРІРµСЂРєР° Р·Р°РїРѕР»РЅРµРЅРёСЏ
+	else throw invalid_argument("Р’РІРµРґРёС‚Рµ РґР°РЅРЅС‹Рµ"); //РёСЃРєР»СЋС‡РµРЅРёРµ
 
 }
 
-string Human1::tostring() const //преобразование данных в строку
+string Human1::tostring() const //РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёРµ РґР°РЅРЅС‹С… РІ СЃС‚СЂРѕРєСѓ
 {
 	 
-	return surname+" " + name +" "+ patron + " возраст " + to_string(age) + " вес " + to_string(weight)+'\n';
+	return surname+" " + name +" "+ patron + " РІРѕР·СЂР°СЃС‚ " + to_string(age) + " РІРµСЃ " + to_string(weight)+'\n';
 
 }
 
